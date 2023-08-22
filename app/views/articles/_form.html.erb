@@ -1,0 +1,18 @@
+<div>
+<%= form_with model: article do |f| %>
+  <p>
+    <%= f.label :title, class:"form-label", class:"thick" %>
+    <%= f.text_field :title, class:"form-control" %>
+  </p>
+  <p>
+    <%= f.label :content, class:"form-label", class:"thick" %>
+    <%= f.text_area :content, class:"form-control ace-editor", style:"width:724px; height:200px" %>
+  </p>
+  <%= f.submit class:"btn btn-primary" %>
+<% end %>
+</div>
+<hr>
+<div>
+  <%= link_to '<i class="fa-solid fa-backward"></i>'.html_safe, articles_path, class: "link" %>
+
+</div>

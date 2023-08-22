@@ -1,0 +1,14 @@
+<div>
+    <% @articles.each do |article| %>
+      <div>
+        <figure>
+          <blockquote class="blockquote">
+            <%= link_to article.title, article_path(article), class:"h2" %>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            <%= article.content %>
+          </figcaption>
+        </figure>
+      </div>
+    <% end %>
+</div>
